@@ -21,7 +21,7 @@ func main() {
 	}
 
 	for _, element := range resp.Results {
-		str := colorstring.Color(fmt.Sprintf("[red]Name:[blue]%s \n[red]package:[blue]%s \n[red]Author:[blue]%s \n[red]ProjectURL:[blue]%s", element.Name, element.Package, element.Author, element.ProjectURL))
+		str := colorstring.Color(fmt.Sprintf("[red]Name:[blue]\t\t%s \n[red]package:[blue]\t%s \n[red]Author:[blue]\t\t%s \n[red]ProjectURL:[blue]\t%s", element.Name, element.Package, element.Author, element.ProjectURL))
 		colorstring.Println(str)
 		fmt.Println(" ")
 	}
