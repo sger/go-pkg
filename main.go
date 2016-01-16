@@ -24,4 +24,5 @@ func main() {
 		str := colorstring.Color(fmt.Sprintf("[red] Name\n [blue]%s", element.Name))
 		colorstring.Println(str)
 	}
+	fmt.Println("")
 }
