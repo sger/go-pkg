@@ -8,8 +8,6 @@ import (
 
 func main() {
 
-	colorstring.Println("[blue]Hello [red]World!")
-
 	resp, err := search("log")
 
 	if err != nil {
