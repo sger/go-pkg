@@ -21,8 +21,9 @@ func main() {
 	}
 
 	for _, element := range resp.Results {
-		str := colorstring.Color(fmt.Sprintf("[red] Name\n [blue]%s", element.Name))
+		str := colorstring.Color(fmt.Sprintf("[red]Name:[blue]%s \n[red]package:[blue]%s", element.Name, element.Package))
 		colorstring.Println(str)
+		fmt.Println(" ")
 	}
-	fmt.Println("")
+
 }
