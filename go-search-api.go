@@ -7,21 +7,23 @@ import (
 	"net/http"
 )
 
-const URL_GO_SEARCH_API = "http://go-search.org/api"
+const urlSearchGoAPI = "http://go-search.org/api"
 
+//SearchResponse contains an array of ResultsData
 type SearchResponse struct {
 	Results []ResultsData `json:"hits"`
 }
 
+//ResultsData contains information about the Go package
 type ResultsData struct {
 	Name       		string  `json:"name"`
 	Package 		string  `json:"package"`
 	Author        	string  `json:"author"`
-	ProjectUrl      string  `json:"projecturl"`
+	ProjectURL      string  `json:"projecturl"`
 }
 
 func search(query string) (*SearchResponse, error) {
-	url := fmt.Sprintf(URL_GO_SEARCH_API+"?action=search&q=%s", query)
+	url := fmt.Sprintf(urlSearchGoAPI+"?action=search&q=%s", query)
 
 	client := &http.Client{}
 
