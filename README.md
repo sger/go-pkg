@@ -6,6 +6,7 @@ Usage:
 
 ```
 $ go get https://github.com/sger/go-pkg
+$ go build
 $ ./go-pkg log
 ```
 
