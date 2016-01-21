@@ -1,9 +1,9 @@
 package main
 
 import (
-	"log"
-	"github.com/mitchellh/colorstring"
 	"fmt"
+	"github.com/mitchellh/colorstring"
+	"log"
 	"os"
 )
 

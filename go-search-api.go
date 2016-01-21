@@ -16,10 +16,10 @@ type SearchResponse struct {
 
 //ResultsData contains information about the Go package
 type ResultsData struct {
-	Name       		string  `json:"name"`
-	Package 		string  `json:"package"`
-	Author        	string  `json:"author"`
-	ProjectURL      string  `json:"projecturl"`
+	Name       string `json:"name"`
+	Package    string `json:"package"`
+	Author     string `json:"author"`
+	ProjectURL string `json:"projecturl"`
 }
 
 func search(query string) (*SearchResponse, error) {
